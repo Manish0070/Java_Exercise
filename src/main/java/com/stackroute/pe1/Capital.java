@@ -3,14 +3,19 @@ import java.util.Scanner;
 public class Capital {
     public static void main(String[] args) {
         System.out.println("Enter Character");
-        Scanner sc = new Scanner(System.in);
-        String str = sc.next();
-        char ch = str.charAt(0);
-        int x = (int)ch;
-        if (x >= 65 && x <= 90) {
-            System.out.println("Capital Letter");
-        } else {
-            System.out.println("Small Letter");
-        }
+        char charac='A';
+        Capital cap=new Capital();
+        cap.CharacterCheck(charac);
     }
-}
+
+
+   public String CharacterCheck(char c) {
+
+        int x = (int)c;
+        if (x >= 65 && x <= 90)
+            return ("Capital Letter");
+        else
+            return ("Small Letter");
+
+
+}}
