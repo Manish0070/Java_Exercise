@@ -1,26 +1,33 @@
 package com.stackroute.pe1;
 
 import java.util.*;
-public class Palindrome {
+public class PalindromeChecker {
     public static void main(String args[]) {
         int x = 0, sum = 0, temp, rem;
         System.out.println("Enter Number :");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-            temp = n;
-            while (n > 0) {
-                rem = n % 10;
+    }
+
+
+
+        public String palindromeChecker(int m){
+            int evensum=0,sum=0,rem,temp;
+            temp = m;
+            while (m > 0) {
+                rem = m % 10;
                 if (rem % 2 == 0) {
-                    x = x + rem;
+                    evensum = evensum + rem;
                 }
                 sum = (sum * 10) + rem;
-                n = n / 10;
+                m = m / 10;
             }
-            if (temp == sum)
+            if (temp == sum){
                 System.out.println("palindrome number ");
+                return "Palindrome Number";}
             else {
                 System.out.println("not palindrome");
+                return "Not Palindrome";
             }
-            System.out.println(x);
         }
 }

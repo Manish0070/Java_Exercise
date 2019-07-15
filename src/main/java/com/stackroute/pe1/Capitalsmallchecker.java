@@ -1,10 +1,10 @@
 package com.stackroute.pe1;
 import java.util.Scanner;
-public class Capital {
+public class Capitalsmallchecker {
     public static void main(String[] args) {
         System.out.println("Enter Character");
         char charac='A';
-        Capital cap=new Capital();
+        Capitalsmallchecker cap=new Capitalsmallchecker();
         cap.CharacterCheck(charac);
     }
 

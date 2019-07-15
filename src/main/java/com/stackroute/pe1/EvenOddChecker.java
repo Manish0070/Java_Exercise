@@ -1,24 +1,24 @@
 package com.stackroute.pe1;
 
 import java.util.*;
-public class evenodd {
+public class EvenOddChecker {
     public static void main(String[] args){
         System.out.println("Enter an Integer :");
         Scanner sc= new Scanner(System.in);
         int x =sc.nextInt();
-        evenodd t=new evenodd();
+        EvenOddChecker t=new EvenOddChecker();
         t.compareeven(x);
     }
 
-    public int compareeven(int g){
-        if(g>20&&g<30){
-            if(g%2==0){
+    public int compareeven(int inputNumber){
+        if(inputNumber>20 && inputNumber<30){
+            if(inputNumber%2==0){
                 System.out.println("jerry");
             }
             else{
                 System.out.println("tom");
             }
         }
-        return g;
+        return inputNumber;
     }
 }
