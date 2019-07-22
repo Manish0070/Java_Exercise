@@ -8,25 +8,25 @@ public class GuessNumber {
         int input = sc.nextInt();
     }
 
-  public  String numberGuessedCorrectly(int input, int guessedinput) {
-            if (input == guessedinput)
+  public  String numberGuessedCorrectly(int input, int guessedInput) {
+            if (input == guessedInput)
                 return "Number Guessed correctly";
             else
                 return "none";
 
     }
 
-   public String guessedIntegerSmaller(int input, int guessedinput) {
-        if (input > guessedinput)
+   public String guessedIntegerSmaller(int input, int guessedInput) {
+        if (input > guessedInput)
             return "Guessed Input Is Smaller";
         else
             return "none";
 
     }
 
-    public String guessedIntegerGreater(int input, int guessedinput) {
-        if (input < guessedinput)
-            return "Gussed Input Is Greater";
+    public String guessedIntegerGreater(int input, int guessedInput) {
+        if (input < guessedInput)
+            return "Guessed Input Is Greater";
         else
             return "none";
 

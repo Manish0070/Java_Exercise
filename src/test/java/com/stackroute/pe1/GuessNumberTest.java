@@ -42,12 +42,14 @@ public class GuessNumberTest {
         assertEquals("Number Guessed correctly",actualresult);
 
     }
+    @Test
     public void guessedIntegerIsLowerThanInputInteger() {
         String actualresult = guessNumber.guessedIntegerSmaller(34,22);
 
         assertEquals("Guessed Input Is Smaller",actualresult);
 
     }
+    @Test
     public void guessedIntegerIsGreaterThanInputInteger() {
         String actualresult = guessNumber.guessedIntegerGreater(22,34);
 
